@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'datamapper'
+require 'dm-core'
 
 DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/recall.db")
 

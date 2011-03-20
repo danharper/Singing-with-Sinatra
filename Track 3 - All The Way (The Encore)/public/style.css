@@ -1,0 +1,112 @@
+body {
+	margin: 35px auto;
+	width: 640px;
+}
+
+header {
+	text-align: center;
+	margin: 0 0 20px;
+}
+
+header h1 {
+	display: inline;
+	font-size: 32px;
+}
+
+header h1 a:link, header h1 a:visited {
+	color: #444;
+	text-decoration: none;
+}
+
+header h2 {
+	font-size: 16px;
+	font-style: italic;
+	color: #999;
+}
+
+#main {
+	margin: 0 0 20px;
+}
+
+#add {
+	margin: 0 0 20px;
+}
+
+#add textarea {
+	height: 30px;
+	width: 510px;
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+
+#add input {
+	height: 50px;
+	width: 100px;
+	margin: -50px 0 0;
+	border: 1px solid #ddd;
+	background: white;
+}
+
+#edit textarea {
+	height: 30px;
+	width: 480px;
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+
+#edit input[type=submit] {
+	height: 50px;
+	width: 100px;
+	margin: -50px 0 0;
+	border: 1px solid #ddd;
+	background: white;
+}
+
+#edit input[type=checkbox] {
+	height: 50px;
+	width: 20px;
+}
+
+article {
+	border: 1px solid #eee;
+	border-top: none;
+	padding: 15px 10px;
+}
+
+article:first-of-type {
+	border: 1px solid #eee;
+}
+
+article:nth-child(even) {
+	background: #fafafa;
+}
+
+article.complete {
+	background: #fedae3;
+}
+
+article span {
+	font-size: 0.8em;
+}
+
+p {
+	margin: 0 0 5px;
+}
+
+.meta {
+	font-size: 0.8em;
+	font-style: italic;
+	color: #888;
+}
+
+.links {
+	font-size: 1.8em;
+	line-height: 0.8em;
+	float: right;
+	margin: -10px 0 0;
+}
+
+.links a {
+	display: block;
+	text-decoration: none;
+}

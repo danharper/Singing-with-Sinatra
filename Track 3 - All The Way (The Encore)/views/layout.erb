@@ -5,6 +5,7 @@
 	<title><%= "#{@title} | #{SITE_TITLE}" %></title>
 	<link href="/reset.css" rel="stylesheet">
 	<link href="/style.css" rel="stylesheet">
+	<link href="/rss.xml" rel="alternate" type="application/rss+xml">
 </head>
 <body>
 	<header>
@@ -15,6 +16,15 @@
 	</header>
 
 	<div id="main">
+
+		<% if flash[:notice] %>
+			<p class="notice"><%= flash[:notice] %>
+		<% end %>
+
+		<% if flash[:error] %>
+			<p class="error"><%= flash[:error] %>
+		<% end %>
+
 		<%= yield %>
 	</div>
 

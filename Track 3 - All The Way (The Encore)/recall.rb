@@ -92,7 +92,7 @@ get '/:id/delete' do
 	@note = Note.get params[:id]
 	@title = "Confirm deletion of note ##{params[:id]}"
 	if @note
-		erb :edit
+		erb :delete
 	else
 		redirect '/', :error => "Can't find that note."
 	end
